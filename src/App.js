@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import BookingsWebAPI from './api/bookings_web';
+
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      trips: [],
+    };
+  }
+
+  async componentDidMount() {
+    const { data } = await BookingsWebAPI.availability('2019-02-05');
+
+    this.setState({
+      trips: data,
+    });
+  }
+
   render() {
+    const { trips } = this.state;
+
+    if (!trips.length) {
+      return <div>loading...</div>;
+    }
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {trips.map(trip => (
+          <div>
+            {trip.date}
+          </div>
+        ))}
       </div>
     );
   }

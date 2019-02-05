@@ -1,0 +1,5 @@
+{
+  "BOOKINGS_WEB": {
+    "AVAILABILITY": "http://api.ntstage.com/v1/bookingsweb/availability"
+  }
+}
