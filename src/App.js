@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BookingsWebAPI from './api/bookings_web';
 
+import TripOptionsList from "./components/TripOptionsList";
 import './App.css';
 
 class App extends Component {
@@ -28,12 +29,8 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        {trips.map(trip => (
-          <div>
-            {trip.date}
-          </div>
-        ))}
+      <div className="wrapper">
+          <TripOptionsList trips={trips} />
       </div>
     );
   }

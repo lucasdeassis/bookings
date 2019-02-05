@@ -1,3 +1,5 @@
-.App {
+.wrapper {
+  height: 100vh;
+  padding: 1em;
   text-align: center;
 }

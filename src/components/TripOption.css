@@ -1,0 +1,12 @@
+.trip-option {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.5em;
+  padding: .25em;
+}
+
+.trip-option-day, .trip-option-product {
+  height: 100px;
+  width: 80px;
+  border: solid 1pt black;
+}

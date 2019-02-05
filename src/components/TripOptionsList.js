@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TripOption from './TripOption';
 
+import './TripOptionsList.css';
+
+const MAX_OPTIONS_PER_TIME = 8;
+
 const TripOptionsList = ({ trips }) => (
-  <div className="trip__list">
+  <div className="trip">
     {
-      trips.map(option => (
+      [...Array(MAX_OPTIONS_PER_TIME)].map((_, index) => (
         <TripOption
-          key={option.date}
-          option={option}
+          key={trips[index].date}
+          trip={trips[index]}
         />
       ))
     }
