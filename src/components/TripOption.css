@@ -5,8 +5,58 @@
   padding: .25em;
 }
 
-.trip-option-day, .trip-option-product {
-  height: 100px;
-  width: 80px;
-  border: solid 1pt black;
+.trip-option-header {
+  height: 4.375em;
+}
+
+.trip-option-product {
+  height: 6.875em;
+  width: 5.625em;
+}
+
+.trip-option-header-day {
+  color: gray;
+  padding: .5em 0 1em;
+  font-size: .8em;
+}
+
+.trip-option-header-temp {
+  border-radius: .8em;
+  background-color: #d4543b;
+  color: white;
+  font-size: .8em;
+  font-weight: bold;
+  padding: .3em 0;
+}
+
+.trip-option-product {
+  border: solid 2px lightgray;
+  border-radius: .6em;
+}
+
+.trip-option-product-value {
+  height: 50%;
+  padding: .5em 0 1em;
+}
+
+.trip-option-product-previous {
+  color: gray;
+  font-size: .8em;
+  font-weight: bold;
+  margin: .5em 0 .25em;
+  text-decoration: line-through;
+}
+
+.trip-option-product-actual {
+  color: #e94155;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.trip-option-product-status {
+  border-top: dashed 1px lightgray;
+  color: gray;
+  font-size: .8em;
+  font-weight: 500;
+  padding: .5em 0;
 }

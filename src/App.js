@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BookingsWebAPI from './api/bookings_web';
 
-import TripOptionsList from "./components/TripOptionsList";
+import TripOptionsList from './components/TripOptionsList';
 import './App.css';
 
 class App extends Component {
@@ -24,13 +24,12 @@ class App extends Component {
   render() {
     const { trips } = this.state;
 
-    if (!trips.length) {
-      return <div>loading...</div>;
-    }
-
     return (
       <div className="wrapper">
-          <TripOptionsList trips={trips} />
+        { trips.length
+          ? <TripOptionsList trips={trips} />
+          : <div>loading...</div>
+        }
       </div>
     );
   }
