@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.loading {
+  color: gray;
+  font-weight: bold;
+}
 .greeting-message {
   margin-bottom: .5em;
   color: gray;

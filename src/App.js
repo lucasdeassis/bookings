@@ -38,7 +38,6 @@ class App extends Component {
 
     } catch (err) {
       this.setState({
-        trips: data,
         fetch: 'error',
       });
     }
@@ -52,7 +51,7 @@ class App extends Component {
     }
 
     if (fetch === 'loading') {
-      return <div className="wrapper">loading...</div>
+      return <div className="wrapper loading">loading...</div>
     }
 
     return (
