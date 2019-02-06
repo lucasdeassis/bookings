@@ -5,13 +5,35 @@
   padding: .25em;
 }
 
+.trip-option-label {
+  margin: auto;
+  text-transform: uppercase;
+  padding: 0 1em;
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+
 .trip-option-header {
   height: 4.375em;
 }
 
 .trip-option-product {
+  cursor: pointer;
   height: 6.875em;
   width: 5.625em;
+}
+
+.trip-option-product:hover {
+  box-shadow: 0 0 .8em rgba(33,33,33,.2); 
+}
+
+/* sold out */
+.trip-option-product-3 {
+  cursor: default;
+}
+
+.trip-option-product-3:hover, .trip-option-product:active {
+  box-shadow: none;
 }
 
 .trip-option-header-day {
@@ -30,7 +52,7 @@
 }
 
 .trip-option-product {
-  border: solid 2px lightgray;
+  border: solid 1.5px lightgray;
   border-radius: .6em;
 }
 
@@ -59,4 +81,15 @@
   font-size: .8em;
   font-weight: 500;
   padding: .5em 0;
+}
+
+/* last spaces */
+.trip-option-product-status-2 {
+  color: orangered;
+}
+
+/* sold out */
+.trip-option-product-status-3 {
+  color: #e94155;
+  cursor: default;
 }
