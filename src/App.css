@@ -3,3 +3,39 @@
   padding: 1em;
   text-align: center;
 }
+
+.greeting-message {
+  margin-bottom: .5em;
+  color: gray;
+}
+
+.search-date-input {
+  color: gray;
+  font-weight: bold;
+  padding: .6em 1em;
+  text-transform: uppercase;
+}
+
+.start-button {
+  border: none;
+  border-radius: .25em;
+  background-color: orangered;
+  border: solid 1px orangered;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 .8em;
+  padding: .6em 1em;
+  text-transform: uppercase;
+}
+
+.start-button:hover {
+  background-color: white;
+  color: orangered;
+}
+
+.start-button:active {
+  background-color: orangered;
+  color: white;
+}
